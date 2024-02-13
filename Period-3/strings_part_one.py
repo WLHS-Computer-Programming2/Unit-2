@@ -6,11 +6,33 @@ Description: Covering f-strings, functions with default parameters,
 string indexing, string slicing, as well as if __name__
 '''
 
+def slicing_demo(name):
+    # suppose name = M  r  .       S  m  i  t  h
+    #                0  1  2   3   4  5  6  7  8
+    #               -9  -8 -7 -6  -5 -4 -3 -2 -1
+    # reverse a string
+    # [start:stop:step]
+    # starts at start and go up to but not including stop
+    # if start or stop is blank, it means include the beginning
+    # and end chars
+    print(name[ : :-1])
+    print(name[ : : 1])
+    print(name[ : : 2])
+
+    # Smith
+    # Starts at 4, goes through the end
+    print(name[4:])
+
+    # last character
+    print(name[-1])
+    print(name[len(name)-1])
+
+
+
 
 def main():
-    print("Hello Mr. Smith")
-
-print("Hi")
+    name = "Mr. Smith"
+    slicing_demo(name)
 
 if __name__ == '__main__':
     main()

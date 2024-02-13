@@ -27,12 +27,20 @@ def slicing_demo(name):
     print(name[-1])
     print(name[len(name)-1])
 
+    # Practice in CodeHS with Sandwich Sandwiches
+    # in Indexing and 
+    # If You're Not First, You're Last
+    # and replace a letter, both parts, in Slicing
 
+# more functions
 
+def salutations(name:str,title:str="boring",rank:str="the first")->None:
+    print(f"Hello {name} the {title} {rank}")
 
 def main():
     name = "Mr. Smith"
-    slicing_demo(name)
+    #slicing_demo(name)
+    salutations(name,"mad")
 
 if __name__ == '__main__':
     main()

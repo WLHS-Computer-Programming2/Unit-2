@@ -36,7 +36,7 @@ def slicing_demo(string):
 def salutations(name:str,suffix:str,title:str="boring")->None:
     print(f"Hello {name} the {title} {suffix}.")
 
-    # had to reorder parameters in order to use default argument
+    # had to reorder parameters in order to use default asdfjlasjdlkfjals
     # for title
 
 def main():

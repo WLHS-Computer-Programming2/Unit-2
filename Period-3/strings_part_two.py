@@ -7,15 +7,34 @@ def vowel_counter(string:str)->int:
     Return
     -------
     int: number of vowels"""
+    vowels = 'aeiou'
+    vowel_count = 0
+    for char in string.lower():
+        if char in vowels:
+            vowel_count += 1
+    return vowel_count
 
 def main():
-    assert count_vowels("") == 0
-    assert count_vowels("Rhythm") == 0
-    assert count_vowels("aeiouAEIOU") == 10
-    assert count_vowels("Hello World") == 3
-    assert count_vowels("Python!@# is awesome.") == 4
-    assert count_vowels("HeLLo WoRLd") == 3
+    # assert vowel_counter("") == 0
+    # assert vowel_counter("Rhythm") == 0
+    # assert vowel_counter("aeiouAEIOU") == 10
+    # assert vowel_counter("Hello World") == 3
+    # assert vowel_counter("Python!@# is awesome.") == 6
+    # assert vowel_counter("HELLo WoRLd") == 3
+    # print("All tests passed!")
 
+    cat_name = "Diamond"
+    cat_name.lower()
+    print(cat_name) # stays Diamond
+    cat_name = cat_name.lower()
+    print(cat_name) # it is now lowercase
+
+    # common string methods
+    new_cat = "applejack"
+    print(new_cat.capitalize()) #Applejack
+    print(new_cat.center(20,"-")) # -----applejack------
+    print(new_cat.count("p")) # 2
+    print(new_cat.find("jack")) # 5, can be used for chars
 
 if __name__ == "__main__":
     main()

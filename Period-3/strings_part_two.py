@@ -40,7 +40,13 @@ def main():
     print(new_cat.swapcase()) #aPPLEJACK
     new_cat = "     Applejack                 "
     new_cat = new_cat.strip() # Applejack
-    print(new_cat)
+    print(new_cat.upper())
+    print(new_cat.lower())
+    user_input = "5a"
+    print(user_input.isalnum())
+    print(user_input.isalpha())
+    print(user_input.isdigit())
+
 
 if __name__ == "__main__":
     main()

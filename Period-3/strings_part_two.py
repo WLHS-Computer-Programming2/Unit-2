@@ -35,6 +35,12 @@ def main():
     print(new_cat.center(20,"-")) # -----applejack------
     print(new_cat.count("p")) # 2
     print(new_cat.find("jack")) # 5, can be used for chars
+    print(new_cat.replace("apple","cracker")) #crackerjack
+    new_cat = new_cat.capitalize() # Applejack
+    print(new_cat.swapcase()) #aPPLEJACK
+    new_cat = "     Applejack                 "
+    new_cat = new_cat.strip() # Applejack
+    print(new_cat)
 
 if __name__ == "__main__":
     main()

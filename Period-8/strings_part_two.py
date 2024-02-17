@@ -49,8 +49,28 @@ def main():
     #     assert vowel_counter("AEIOUaeiou") == 10
     # except AssertionError:
     #     print("Test failed")
-    cat_sentence = "Diamond is one of six foster kittens."
+    cat_name = "Diamond"
+    cat_sentence = f"{cat_name} is one of six foster kittens."
+    print(cat_sentence.upper())
+    print(cat_sentence.title())
+    print(cat_sentence.capitalize())
+    print(cat_name.center(31,"*"))
+    print(cat_sentence.count("o"))
+    print(cat_sentence.count("foster"))
+    cat_sentence = cat_sentence.replace("six","seven")
+    print(cat_sentence)
+    sentence = "The grey cat is in a grey box."
+    sentence = sentence.replace("grey","orange",1)
+    print(sentence)
+    cat_name = "        Applejack                     "
+    cat_name = cat_name.strip()
+    print(cat_name)
+    user_input = "5a-"
+    print(user_input.isdigit())
+    print(user_input.isalpha())
+    print(user_input.isalnum())
     
+
     
 
 

@@ -51,7 +51,7 @@ class Kiosk:
             except ValueError:
                 print("Invalid input. Please enter a number.")
 
-    def give_change(self):
+    def give_change(self)->None:
         """Gives you your change.
         """
         change = round(self.amount_paid - self.transaction_total, 2)
@@ -59,7 +59,7 @@ class Kiosk:
             print(f"Here is your change: ${change:.2f}")
         print("Transaction complete. Thank you for shopping!")
 
-    def finalize_transaction(self):
+    def finalize_transaction(self)->None:
         """Runs all the stuff related to the transaction.
         """
         self.get_total()

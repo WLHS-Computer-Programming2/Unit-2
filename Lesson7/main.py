@@ -40,7 +40,7 @@ class ElectricCar(Car):
     def __init__(self,make,model,year,battery_capacity):
         super().__init__(make,model,year)
         self.battery_capacity = battery_capacity
-        self.battery_capacity = 0
+        self.battery_charge = 0
 
     def fill_gas_tank(self, amount):
         print("Electric cars don't have gas tanks.")
@@ -50,10 +50,15 @@ class ElectricCar(Car):
         self.battery_capacity += amount
 
 def main():
-    my_leaf = ElectricCar.ElectricCar("Nissan","Leaf",2024,60)
-    print(my_leaf.battery_level)
+    my_leaf = ElectricCar("Nissan","Leaf",2024,60)
+    print(my_leaf.battery_capacity)
     print(my_leaf.make)
-    
+    print(my_leaf.battery_capacity)
+    my_leaf.fill_gas_tank(0.6)
+    print(my_leaf.battery_capacity)
+    my_leaf.charge_car(0.3)
+    print(my_leaf.battery_charge)
+
 
 if __name__ == '__main__':
     main()
